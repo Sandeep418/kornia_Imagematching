@@ -1,0 +1,10 @@
+Build the Docker Image:
+
+docker build -t loftr-api:latest .
+
+Run the Docker Container:
+docker run -d -p 5000:5000 loftr-api:latesr
+
+To See the Docker Image status :
+
+docker ps
