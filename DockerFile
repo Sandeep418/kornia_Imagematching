@@ -1,3 +1,4 @@
+FROM nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
 # Use the official Python image as the base image
 FROM python:3.9-slim
 
