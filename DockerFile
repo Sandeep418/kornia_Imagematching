@@ -1,15 +1,16 @@
+FROM nvidia/cuda:9.1-cudnn7-devel-ubuntu16.04
 # Use the official Python image as the base image
 FROM python:3.9-slim
 
 # Set the working directory inside the container
-WORKDIR /Assignmnet
+WORKDIR /kornia_Imagematching
 
 # Copy the requirements file into the container and install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the Flask app code into the container
-COPY app.py .
+COPY Image_similarity .
 
 # Expose the Flask app port
 EXPOSE 5000
