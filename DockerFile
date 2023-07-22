@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the Flask app code into the container
-COPY app.py .
+COPY Image_similarity .
 
 # Expose the Flask app port
 EXPOSE 5000
